@@ -19,5 +19,4 @@ The following points has been improved :
 - Use semantic tag
 
 ## Performance
-- Files minified
 - Images optimised
