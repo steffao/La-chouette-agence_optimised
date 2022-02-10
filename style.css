@@ -7,14 +7,14 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a,
-button {
+a{
     transition: all .3s ease-in-out;
     outline: none!important;
 }
 
 a:hover {
-    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -325,9 +325,10 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
-    background: transparent;
+.nav > li a:hover {
+    background: #e02d12;
+    color: #FFF!important;
+    font-weight: bold ;
 }
 
 .navbar-toggle {
@@ -453,9 +454,7 @@ nav .caret {
     background: rgba(0, 0, 0, .3);
 }
 
-button {
-    outline: none!important;
-}
+
 
 .btn-rd {
     border-radius: 40px;
@@ -470,6 +469,11 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+}
+a:focus-visible, form .outlined:focus-visible {
+    outline-color: -webkit-focus-ring-color !important;
+    outline-style: auto !important;
+    outline-width: 1px !important;  
 }
 
 .icon-lg {
@@ -529,7 +533,7 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before , a[data-lightbox]:focus::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -639,6 +643,8 @@ h4,
 h5,
 h6,
 p,
+blockquote,
+figcaption,
 label,
 .btn,
 a {
@@ -759,6 +765,9 @@ h4 {
     font-weight: 900;
     text-decoration: underline!important;
 }
+.bold {
+    font-weight: bold;
+}
 
 .bgc-white {
     background-color: #FFFFFF;
@@ -769,20 +778,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #e02d12;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #e02d12!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #e02d12;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #983d30!important;
     color: #FFFFFF!important;
 }
 
@@ -795,11 +804,11 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #e02d12!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #983d30!important;
 }
 
 .icon-dark-slate-blue {
